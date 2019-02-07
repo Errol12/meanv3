@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static(path.join(__dirname,'/dist/App1/')));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-//app.use('/api',api);
+app.use('/api',api);
 
 // app.get('*',(req,res) => {
 // 	res.sendFile(path.join(__dirname,'/dist/App1/index.html'));
